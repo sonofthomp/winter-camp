@@ -19,6 +19,7 @@ dev = open(argv[3], 'w')
 test = open(argv[4], 'w')
 
 for line in all_data.readlines():
+	# Tokenize each line and fix colons to conform with crfsuite
 	tokens = nltk.word_tokenize(line)
 	sentence = ' '.join(tokens) + '\n'
 	sentence = sentence.replace(':', '_')  # replace : with _ for crfsuite

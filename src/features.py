@@ -6,7 +6,7 @@ from typing import List
 def _suffix_feature(token: str, size: int) -> str:
     return f"suf{size}={token[-size:]}"
 
-
+# TEMPLATE CODE WHICH I DID NOT END UP USING!
 def extract(tokens: List[str]) -> List[List[str]]:
     """Feature extraction."""
     # NB: tokens are assumed to already be case-folded.
